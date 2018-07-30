@@ -4,4 +4,4 @@
 
 echo "$(hostname -i) spark-master" >> /etc/hosts
 
-/opt/spark-2.3.1-bin-hadoop2.6/sbin/start-master.sh --ip spark-master --port 7077
+/opt/${SPARK_VERSION}-bin-${HADOOP_VERSION}/sbin/start-master.sh --ip spark-master --port 7077
